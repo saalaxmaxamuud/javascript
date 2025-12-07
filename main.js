@@ -42,6 +42,82 @@ function Employee (name, salary, role){
     this.salary=salary;
     this.role=role;
 }
+let student = {
+    name: "maryam",
+    grade: "A",
+    school: "afbaro acdemy"
+};
+
+student.age = 18;
+student["favorite-subject"] = "Physics";
+
+console.log(student);
+
+let item = {
+    itemName: "Milk",
+    price: 2,
+    category: "Food"
+};
+
+item.quantity = 30;
+item["discount-percentage"] = 10;
+
+console.log(item);
+let menu = {
+    burger: 5,
+    pizza: 8,
+    juice: 3
+};
+
+for (let item in menu) {
+    console.log(item, ":", menu[item]);
+}
+let city = {
+    population: 500000,
+    mayor: "Hassan",
+    area: "200 sq km"
+};
+
+for (let key in city) {
+    console.log(key, ":", city[key]);
+}
+let schedule = {
+    math: "8:00 AM",
+    english: "10:00 AM",
+    science: "1:00 PM"
+};
+
+for (let subject in schedule) {
+    console.log(subject, ":", schedule[subject]);
+}
+
+
+let movie = {
+    title: "Inception",
+    duration: "2h 30m",
+    rating: 9
+};
+
+let jsonString = JSON.stringify(movie);
+console.log(jsonString);
+let jsonData = '{"name":"Sara","age":25,"country":"Kenya"}';
+
+let obj = JSON.parse(jsonData);
+
+console.log(obj.name);
+console.log(obj.age);
+console.log(obj.country);
+let weather = {
+    temperature: 32,
+    humidity: "70%",
+    condition: "Sunny"
+};
+
+let json = JSON.stringify(weather);  
+let finalObj = JSON.parse(json);      
+
+console.log(finalObj);
+
 
 
 // emp1=new Employee("ahmed", 1200, "manager")
